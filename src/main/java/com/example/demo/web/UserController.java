@@ -20,11 +20,8 @@ public class UserController {
     }
     //    前端如何传参访问： curl --location --request PUT 'http://localhost:8080/user?name=yijing2&age=20'
     @PutMapping
-    public String insertUser(String name, int age){
-        User user = new User();
+    public String insertUser(@RequestBody User user){
         user.setId(id);
-        user.setName(name);
-        user.setAge(age);
         users.add(user);
         id += 1;
         for(User u : users){
