@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.web.HelloController;
+//import com.example.demo.web.HelloController;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,20 +14,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
-@SpringBootTest
-public class DemoApplicationTests {
-
-	private MockMvc mvc;
-
-	@Before
-	public void setUp() throws Exception {
-		mvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
-	}
-
-	@Test
-	public void getHello() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("hello world")));
-	}
-}
+//@SpringBootTest
+//public class DemoApplicationTests {
+//
+//	private MockMvc mvc;
+//
+//	@Before
+//	public void setUp() throws Exception {
+//		mvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
+//	}
+//
+//	@Test
+//	public void getHello() throws Exception {
+//		mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
+//				.andExpect(status().isOk())
+//				.andExpect(content().string(equalTo("hello world")));
+//	}
+//}
