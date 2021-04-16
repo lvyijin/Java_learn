@@ -17,12 +17,12 @@ public class UserController {
 
             SqlSession sqlSession = sqlSessionFactory.openSession();
             try{
-//                User user = sqlSession.selectOne("mapper.userMapper.selectUser", 6);
-                UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-                User user = userMapper.selectUser(6);
-                User user1 = userMapper.findByName("y1");
-                System.out.println(user);
-                System.out.println(user1);
+                User user = sqlSession.selectOne("com.example.demo.UserMapper.selectUser", 6);
+//                UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+//                User user = userMapper.selectUser(6);
+//                User user1 = userMapper.findByName("y1");
+//                System.out.println(user);
+//                System.out.println(user1);
             }finally {
 //                保证数据库资源被关闭
                 sqlSession.close();

@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Select;
  * Blog: http://blog.didispace.com/
  * Github: https://github.com/dyc87112/
  */
-@Mapper
+//@Mapper
 public interface UserMapper {
     User selectUser(int id);
 
