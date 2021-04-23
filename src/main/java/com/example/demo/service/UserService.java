@@ -9,6 +9,7 @@ public interface UserService {
     public User[] getAllUsers();
     public User[] findUserByNameandAge(String key);
     public void insertUser(User user);
+    public void deleteUser(int id);
 //    public void addUser();
 }
 

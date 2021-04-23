@@ -45,4 +45,9 @@ public class UserServiceImpl implements UserService {
     public void insertUser(User user){
         userDao.insertUser(user);
     }
+
+    public void deleteUser(int id){
+        userDao.deleteUser(id);
+        System.out.printf("delete id %d", id);
+    }
 }

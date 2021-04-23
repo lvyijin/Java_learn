@@ -28,4 +28,7 @@
         insert into User (name, age) values (#{name}, #{age})
     </insert>
 
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from User where id = #{id}
+    </delete>
 </mapper>

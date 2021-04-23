@@ -12,6 +12,7 @@ public interface UserDao {
     public User[] selectUserByAge(int age);
     public User[] selectUserByNameandAge(String name, int age);
     public void insertUser(User user);
+    public void deleteUser(int id);
 
 //    @Select("SELECT * FROM USER WHERE NAME = #{name}")
 //    User findByName(@Param("name") String name);
