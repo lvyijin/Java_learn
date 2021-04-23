@@ -4,5 +4,11 @@ import com.example.demo.domain.User;
 
 public interface UserService {
     public User findUserById(int id);
+    public User[] findUserByName(String name);
+    public User[] findUserByAge(int age);
+    public User[] getAllUsers();
+    public User[] findUserByNameandAge(String key);
+    public void insertUser(User user);
+//    public void addUser();
 }
 

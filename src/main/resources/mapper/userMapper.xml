@@ -7,4 +7,25 @@
     <select id="selectUserById" resultType="com.example.demo.domain.User">
         select * from User where id = #{id}
     </select>
+
+    <select id="selectUserByName" resultType="com.example.demo.domain.User">
+        select * from User where name = #{name}
+    </select>
+
+    <select id="getAllUsers" resultType="com.example.demo.domain.User">
+        select * from User;
+    </select>
+
+    <select id="selectUserByAge" resultType="com.example.demo.domain.User">
+        select * from User where age = #{age}
+    </select>
+
+    <select id="selectUserByNameandAge" resultType="com.example.demo.domain.User">
+        select * from User where age = #{age} or name = #{name}
+    </select>
+
+    <insert id="insertUser" parameterType="com.example.demo.domain.User">
+        insert into User (name, age) values (#{name}, #{age})
+    </insert>
+
 </mapper>

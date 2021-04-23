@@ -7,6 +7,11 @@ import org.apache.ibatis.annotations.Select;
 public interface UserDao {
 
     public User selectUserById(int id);
+    public User[] selectUserByName(String name);
+    public User[] getAllUsers();
+    public User[] selectUserByAge(int age);
+    public User[] selectUserByNameandAge(String name, int age);
+    public void insertUser(User user);
 
 //    @Select("SELECT * FROM USER WHERE NAME = #{name}")
 //    User findByName(@Param("name") String name);
